@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>eu.europa.ec.fisheries.uvms.reporting</groupId>
+        <groupId>fish.focus.uvms.reporting</groupId>
         <artifactId>reporting</artifactId>
         <version>1.1.28-UVMS-SNAPSHOT</version>
     </parent>
@@ -54,7 +54,7 @@
 		</dependency>
 
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
+            <groupId>fish.focus.uvms.commons</groupId>
             <artifactId>uvms-commons-message</artifactId>
         </dependency>
 
@@ -65,18 +65,18 @@
         </dependency>
         
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.spatial</groupId>
+            <groupId>fish.focus.uvms.spatial</groupId>
             <artifactId>spatial-model</artifactId>
         </dependency>        
 
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.asset</groupId>
+            <groupId>fish.focus.uvms.asset</groupId>
             <artifactId>asset-model</artifactId>
         </dependency>
 
 
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.movement</groupId>
+            <groupId>fish.focus.uvms.movement</groupId>
             <artifactId>movement-model</artifactId>
         </dependency>
 

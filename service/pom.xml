@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>eu.europa.ec.fisheries.uvms.reporting</groupId>
+        <groupId>fish.focus.uvms.reporting</groupId>
         <artifactId>reporting</artifactId>
         <version>1.1.28-UVMS-SNAPSHOT</version>
     </parent>
@@ -32,17 +32,12 @@
 		</dependency>
         <dependency>
             <groupId>fish.focus.uvms.maven</groupId>
-            <artifactId>uvms-pom-logging-deps</artifactId>
-            <type>pom</type>
-        </dependency>
-        <dependency>
-            <groupId>fish.focus.uvms.maven</groupId>
             <artifactId>uvms-pom-test-deps</artifactId>
             <type>pom</type>
         </dependency>
 
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.activity</groupId>
+            <groupId>fish.focus.uvms.activity</groupId>
             <artifactId>activity-model</artifactId>
             <exclusions>
             	<exclusion>
@@ -54,12 +49,12 @@
 
 
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
+            <groupId>fish.focus.uvms.commons</groupId>
             <artifactId>uvms-commons-message</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms</groupId>
+            <groupId>fish.focus.uvms.lib</groupId>
             <artifactId>usm4uvms</artifactId>
 		</dependency>
 		<dependency>
@@ -75,7 +70,7 @@
         </dependency>		
 
     	<dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.spatial</groupId>
+            <groupId>fish.focus.uvms.spatial</groupId>
             <artifactId>spatial-model</artifactId>
         </dependency>
 
@@ -91,17 +86,17 @@
         </dependency>
 
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.movement</groupId>
+            <groupId>fish.focus.uvms.movement</groupId>
             <artifactId>movement-model</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.asset</groupId>
+            <groupId>fish.focus.uvms.asset</groupId>
             <artifactId>asset-model</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.audit</groupId>
+            <groupId>fish.focus.uvms.audit</groupId>
             <artifactId>audit-model</artifactId>
         </dependency>
 
@@ -118,34 +113,14 @@
         </dependency>
         
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
+            <groupId>fish.focus.uvms.commons</groupId>
             <artifactId>uvms-commons-date</artifactId>
             <version>${uvms.commons.version}</version>
         </dependency>
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
-            <artifactId>uvms-commons-service</artifactId>
-            <version>4.0.13</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
-            <artifactId>uvms-commons-domain</artifactId>
-            <version>4.0.13</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
-            <artifactId>uvms-commons-dao</artifactId>
-            <version>4.0.13</version>
-        </dependency>
-        <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
-            <artifactId>uvms-commons-geometry</artifactId>
-            <version>4.0.13</version>		            
-        </dependency>
-        <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
+            <groupId>fish.focus.uvms.commons</groupId>
             <artifactId>uvms-commons-rest</artifactId>
-            <version>4.0.13</version>
+            <version>${uvms.commons.version}</version>
         </dependency>
 
 		<dependency>
@@ -220,9 +195,30 @@
             <version>2.9.9</version>
         </dependency>
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.movement-rules</groupId>
+            <groupId>fish.focus.uvms.movement-rules</groupId>
             <artifactId>movement-rules-model</artifactId>
-            <version>2.4.8</version>
+            <version>2.4.15</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-search-orm</artifactId>
+            <version>5.4.0.Final</version>
+            <scope>provided</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.hibernate</groupId>
+                    <artifactId>hibernate-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>20.0</version>
         </dependency>
     </dependencies>
 

@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>eu.europa.ec.fisheries.uvms.reporting</groupId>
+        <groupId>fish.focus.uvms.reporting</groupId>
         <artifactId>reporting</artifactId>
         <version>1.1.28-UVMS-SNAPSHOT</version>
     </parent>
@@ -22,24 +22,6 @@
             <type>pom</type>
         </dependency>
     </dependencies>
-
-    <profiles>
-        <profile>
-            <id>dg-mare</id>
-            <distributionManagement>
-                <repository>
-                    <id>digit-releases</id>
-                    <name>DG DIGIT Repository</name>
-                    <url>https://webgate.ec.europa.eu/CITnet/nexus/content/repositories/mare/</url>
-                </repository>
-                <snapshotRepository>
-                    <id>digit-snapshots</id>
-                    <name>DG DIGIT Snapshot Repository</name>
-                    <url>https://webgate.ec.europa.eu/CITnet/nexus/content/repositories/mare-snapshots/</url>
-                </snapshotRepository>
-            </distributionManagement>
-        </profile>
-    </profiles>
 
     <build>
         <finalName>${project.parent.artifactId}-model-${project.version}</finalName>

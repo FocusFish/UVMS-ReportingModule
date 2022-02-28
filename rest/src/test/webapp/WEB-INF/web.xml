@@ -3,7 +3,7 @@
 
 	<filter>
 		<filter-name>TempSecurityFilter</filter-name>
-		<filter-class>eu.europa.ec.fisheries.uvms.reporting.rest.filter.TempSecurityFilter</filter-class>
+		<filter-class>fish.focus.uvms.reporting.rest.filter.TempSecurityFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>TempSecurityFilter</filter-name>
