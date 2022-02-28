@@ -136,18 +136,6 @@
             </dependency>
 
             <dependency>
-                <groupId>${project.groupId}</groupId>
-                <artifactId>${project.artifactId}-service</artifactId>
-                <version>${project.parent.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>${project.groupId}</groupId>
-                <artifactId>${project.artifactId}-message</artifactId>
-                <version>${project.parent.version}</version>
-            </dependency>
-
-            <dependency>
                 <groupId>fish.focus.uvms.movement</groupId>
                 <artifactId>movement-model</artifactId>
                 <version>${movement.model.version}</version>
@@ -345,9 +333,6 @@
     <modules>
         <module>model</module>
         <module>LIQUIBASE</module>
-        <module>rest</module>
-        <module>service</module>
-        <module>message</module>
         <module>module</module>
     </modules>
 </project>

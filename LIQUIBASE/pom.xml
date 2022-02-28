@@ -9,7 +9,7 @@
 
     <artifactId>reporting-liquibase</artifactId>
     <name>${project.parent.artifactId}-liquibase</name>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <properties>
         <liquibase.core.version>3.5.1</liquibase.core.version>
