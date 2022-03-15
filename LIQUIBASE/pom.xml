@@ -4,7 +4,7 @@
     <parent>
         <groupId>fish.focus.uvms.reporting</groupId>
         <artifactId>reporting</artifactId>
-        <version>1.1.29</version>
+        <version>1.1.30</version>
     </parent>
 
     <artifactId>reporting-liquibase</artifactId>
@@ -14,7 +14,6 @@
     <properties>
         <liquibase.core.version>3.5.1</liquibase.core.version>
         <postgresql.version>9.4-1201-jdbc41</postgresql.version>
-        <ojdbc6.version>11.2.0.3</ojdbc6.version>
     </properties>
 
     <dependencies>
@@ -29,13 +28,6 @@
             <artifactId>postgresql</artifactId>
             <version>${postgresql.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc6</artifactId>
-            <version>${ojdbc6.version}</version>
-        </dependency>
-
     </dependencies>
 	
 
