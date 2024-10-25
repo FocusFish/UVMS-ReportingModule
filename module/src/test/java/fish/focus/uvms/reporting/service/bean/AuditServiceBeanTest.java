@@ -10,8 +10,9 @@ details. You should have received a copy of the GNU General Public License along
  */
 package fish.focus.uvms.reporting.service.bean;
 
-import static org.junit.Assert.assertNull;
+import fish.focus.uvms.commons.service.interceptor.AuditActionEnum;
 import fish.focus.uvms.reporting.message.service.AuditMessageServiceBean;
+import fish.focus.uvms.reporting.model.exception.ReportingServiceException;
 import fish.focus.uvms.reporting.service.bean.impl.AuditServiceBean;
 import org.junit.Before;
 import org.junit.Test;
@@ -19,35 +20,32 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.mockito.runners.MockitoJUnitRunner;
+import org.mockito.junit.MockitoJUnitRunner;
 
-import fish.focus.uvms.commons.service.interceptor.AuditActionEnum;
-import fish.focus.uvms.reporting.model.exception.ReportingServiceException;
+import static org.junit.Assert.assertNull;
 
 @RunWith(MockitoJUnitRunner.class)
 public class AuditServiceBeanTest {
-	
-	@Mock
+
+    @Mock
     AuditMessageServiceBean auditProducerBean;
-	
-	@InjectMocks
+
+    @InjectMocks
     AuditServiceBean auditServiceBean;
-	
-	@Before
+
+    @Before
     public void initMocks() {
         MockitoAnnotations.initMocks(this);
     }
-	
-	@Test
-	public void testInterceptor() {
-		try {
-			auditServiceBean.sendAuditReport(AuditActionEnum.CREATE, "123", "test");
-			auditServiceBean.sendAuditReport(AuditActionEnum.MODIFY, "123", "test");
-			auditServiceBean.sendAuditReport(AuditActionEnum.DELETE, "123", "test");
-		} catch (ReportingServiceException e) {
-			assertNull(e);
-		}
-		
-	}
 
+    @Test
+    public void testInterceptor() {
+        try {
+            auditServiceBean.sendAuditReport(AuditActionEnum.CREATE, "123", "test");
+            auditServiceBean.sendAuditReport(AuditActionEnum.MODIFY, "123", "test");
+            auditServiceBean.sendAuditReport(AuditActionEnum.DELETE, "123", "test");
+        } catch (ReportingServiceException e) {
+            assertNull(e);
+        }
+    }
 }
