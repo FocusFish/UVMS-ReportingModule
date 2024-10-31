@@ -14,6 +14,7 @@ import fish.focus.uvms.commons.service.interceptor.AuditActionEnum;
 import fish.focus.uvms.reporting.message.service.AuditMessageServiceBean;
 import fish.focus.uvms.reporting.model.exception.ReportingServiceException;
 import fish.focus.uvms.reporting.service.bean.impl.AuditServiceBean;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -33,9 +34,16 @@ public class AuditServiceBeanTest {
     @InjectMocks
     AuditServiceBean auditServiceBean;
 
+    private AutoCloseable openedMocks;
+
     @Before
     public void initMocks() {
-        MockitoAnnotations.initMocks(this);
+        openedMocks = MockitoAnnotations.openMocks(this);
+    }
+
+    @After
+    public void closeMocks() throws Exception {
+        openedMocks.close();
     }
 
     @Test
