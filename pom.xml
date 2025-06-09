@@ -34,7 +34,7 @@
         <maven.release.plugin.version>2.5.3</maven.release.plugin.version>
         <maven.scm.provider.version>2.1.1</maven.scm.provider.version>
         <activity.model.version>1.2.18</activity.model.version>
-        <fish.focus.parent.version>3.30</fish.focus.parent.version>
+        <fish.focus.parent.version>3.31</fish.focus.parent.version>
 
         <scm.connection>scm:git:https://github.com/FocusFish/UVMS-ReportingModule.git</scm.connection>
     </properties>
