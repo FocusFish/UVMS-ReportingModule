@@ -12,7 +12,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <liquibase.core.version>4.32.0</liquibase.core.version>
+        <liquibase.core.version>4.33.0</liquibase.core.version>
         <postgresql.version>42.7.7</postgresql.version>
     </properties>
 
