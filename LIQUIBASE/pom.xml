@@ -29,7 +29,7 @@
             <version>${postgresql.version}</version>
         </dependency>
     </dependencies>
-	
+
 
     <profiles>
 
@@ -58,7 +58,7 @@
                 </dependency>
             </dependencies>
         </profile>
-        
+
         <profile>
             <id>test</id>
              <activation>
