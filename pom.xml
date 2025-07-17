@@ -23,7 +23,7 @@
         <jackson.version>2.19.1</jackson.version>
         <asset.version>6.8.37</asset.version>
         <audit.model.version>4.4.0</audit.model.version>
-        <movement.model.version>5.7.1</movement.model.version>
+        <movement.model.version>5.8.0</movement.model.version>
         <spatial.model.version>2.2.12</spatial.model.version>
         <application.name>${project.parent.artifactId}</application.name>
         <application.version>${project.parent.version}</application.version>
