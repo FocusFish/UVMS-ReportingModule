@@ -24,7 +24,7 @@
         <asset.version>6.8.37</asset.version>
         <audit.model.version>4.4.0</audit.model.version>
         <movement.model.version>5.8.0</movement.model.version>
-        <spatial.model.version>2.2.12</spatial.model.version>
+        <spatial.model.version>2.3.0</spatial.model.version>
         <application.name>${project.parent.artifactId}</application.name>
         <application.version>${project.parent.version}</application.version>
         <application.logfile>/app/logs/${project.parent.artifactId}/${project.parent.artifactId}.log</application.logfile>
