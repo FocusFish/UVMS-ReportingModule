@@ -4,7 +4,7 @@
     <parent>
         <groupId>fish.focus.uvms.reporting</groupId>
         <artifactId>reporting</artifactId>
-        <version>1.1.32</version>
+        <version>1.2.0</version>
     </parent>
 
     <artifactId>reporting-liquibase</artifactId>
@@ -12,8 +12,8 @@
     <packaging>pom</packaging>
 
     <properties>
-        <liquibase.core.version>3.5.1</liquibase.core.version>
-        <postgresql.version>9.4-1201-jdbc41</postgresql.version>
+        <liquibase.core.version>4.33.0</liquibase.core.version>
+        <postgresql.version>42.7.7</postgresql.version>
     </properties>
 
     <dependencies>
@@ -29,7 +29,7 @@
             <version>${postgresql.version}</version>
         </dependency>
     </dependencies>
-	
+
 
     <profiles>
 
@@ -48,7 +48,7 @@
                 <db.outputFile>changelog/generatedChangelog.xml</db.outputFile>
                 <driver.groupId>org.postgresql</driver.groupId>
                 <driver.artifactId>postgresql</driver.artifactId>
-                <driver.version>9.4-1201-jdbc41</driver.version>
+                <driver.version>42.7.7</driver.version>
             </properties>
             <dependencies>
                 <dependency>
@@ -58,7 +58,7 @@
                 </dependency>
             </dependencies>
         </profile>
-        
+
         <profile>
             <id>test</id>
              <activation>
@@ -78,7 +78,7 @@
                     <plugin>
                         <groupId>org.liquibase</groupId>
                         <artifactId>liquibase-maven-plugin</artifactId>
-                        <version>3.5.3</version>
+                        <version>4.33.0</version>
                         <configuration>
                             <url>${db.docker.url}</url>
                             <migrationSqlOutputFile>${project.build.directory}/full-update.sql</migrationSqlOutputFile>
@@ -103,7 +103,7 @@
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>build-helper-maven-plugin</artifactId>
-                        <version>3.0.0</version>
+                        <version>3.6.1</version>
                         <executions>
                             <execution>
                                 <id>attach-artifacts</id>
@@ -165,9 +165,11 @@
 		<plugins>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.4.1</version>
+                <version>3.7.1</version>
                 <configuration>
-                    <descriptor>assembly.xml</descriptor>
+                    <descriptors>
+                        <descriptor>assembly.xml</descriptor>
+                    </descriptors>
                     <finalName>${project.artifactId}</finalName>
                     <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
