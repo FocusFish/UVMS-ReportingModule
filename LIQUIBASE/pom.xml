@@ -13,7 +13,7 @@
 
     <properties>
         <liquibase.core.version>4.33.0</liquibase.core.version>
-        <postgresql.version>42.7.7</postgresql.version>
+        <postgresql.version>42.7.8</postgresql.version>
     </properties>
 
     <dependencies>
@@ -48,7 +48,7 @@
                 <db.outputFile>changelog/generatedChangelog.xml</db.outputFile>
                 <driver.groupId>org.postgresql</driver.groupId>
                 <driver.artifactId>postgresql</driver.artifactId>
-                <driver.version>42.7.7</driver.version>
+                <driver.version>42.7.8</driver.version>
             </properties>
             <dependencies>
                 <dependency>
